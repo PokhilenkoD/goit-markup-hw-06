@@ -776,3 +776,30 @@ pointer-events: none;
   
 }
 
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  height: 100%;
+  padding: 40px;
+  
+}
+
+.form-title {
+  margin-bottom: 12px;
+}
+
+.form-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form-group-license {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
