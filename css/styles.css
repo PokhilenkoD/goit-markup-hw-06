@@ -22,7 +22,7 @@
   --team-item-bg-color: #ffffff;
   --icons-color: #AFB1B8;
   --icons-hover-colors: white; 
-  --animations: 1250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --animations: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   --form-btn-bg-color: #188ce8;
   --placeholder-txt-color: rgba(117, 117, 117, 0.5);
   --agreement-txt-color: #757575;
