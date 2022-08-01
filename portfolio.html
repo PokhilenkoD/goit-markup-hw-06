@@ -349,14 +349,16 @@
             </li>
           </ul>
         </div>
-        <form class="footer-subscription-form">
+        <div class="footer-subscription-form" role="group">
           <strong class="footer-subscription-txt">Подпишитесь на рассылку</strong>
-          <div class="footer-subscription-group" role="group">
+          <form class="footer-subscription-group">
             <input
               class="footer-subscription-input"
               type="email"
               name="subscription"
               placeholder="E-mail"
+              autocomplete="off"
+              required
             />
             <button class="footer-subscription-btn" type="submit">
               Подписаться
@@ -364,8 +366,8 @@
                 <use href="./images/icons/icons.svg#subscription"></use>
               </svg>
             </button>
-          </div>
-        </form>
+          </form>
+        </div>
       </div>
     </footer>
   </body>

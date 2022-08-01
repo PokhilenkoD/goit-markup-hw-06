@@ -22,7 +22,7 @@
   --team-item-bg-color: #ffffff;
   --icons-color: #AFB1B8;
   --icons-hover-colors: white; 
-  --animations: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --animations: 1250ms cubic-bezier(0.4, 0, 0.2, 1);
   --form-btn-bg-color: #188ce8;
   --placeholder-txt-color: rgba(117, 117, 117, 0.5);
   --agreement-txt-color: #757575;
@@ -544,7 +544,7 @@ fill: currentColor
 }
 
 .footer-socials {
-  margin-right: 93px;
+  margin-right: auto;
 }
 
 
@@ -587,14 +587,17 @@ fill: #FFFFFF;
 }
 
 .footer-subscription-form {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 20px; */
 }
 .footer-subscription-txt {
   line-height: calc(16 / 14);
   text-transform: uppercase;
   color: var(--secondary-txt-color);
+
+  display: block;
+  margin-bottom: 20px;
 }
 .footer-subscription-group {
   display: flex;
@@ -648,7 +651,14 @@ fill: #FFFFFF;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: none;
+  cursor: pointer;
 
+  transition: background-color var(--animations);
+
+ }
+
+ .footer-subscription-btn:hover, .footer-subscription-btn:focus {
+    background-color: var(--hero-btn-hover-color);
  }
 
 /* ========================
@@ -849,7 +859,12 @@ pointer-events: none;
   height: 30px;
   padding: 0;
   cursor: pointer;
+  background-color: transparent;
   
+}
+
+.modal-btn-icon {
+  transition: fill var(--animations);
 }
 
 .modal-btn-icon:hover {
@@ -886,18 +901,18 @@ pointer-events: none;
   margin-bottom: 0;
 }
 
-.register-form-input:focus {
+.register-form-input:focus, .register-form-input:hover {
 border-color: var(--accent-bg-color);
 }
 
-.register-form-input:focus + .register-form-icon {
+.register-form-input:focus, .register-form-input:hover + .register-form-icon {
   fill: var(--accent-bg-color);
 }
 
 .register-form-label {
   display: block;
   text-align: left;
-  margin-bottom: 6px;
+  margin-bottom: 4px;
 
   font-size: 12px;
   line-height: calc(14 / 12);
@@ -913,6 +928,8 @@ border-color: var(--accent-bg-color);
   padding: 12px;
   padding-left: 44px;
   width: 100%;
+
+  transition: border-color var(--animations);
 }
 
 .register-form-massage {
@@ -935,6 +952,8 @@ border-color: var(--accent-bg-color);
   position: absolute;
   bottom: 13px;
   left: 13px;
+
+  transition: fill var(--animations);
 }
 
 .register-form-agreement {
@@ -959,7 +978,7 @@ border-color: var(--accent-bg-color);
   overflow: hidden;
 }
 
-.register-form-massage:focus {
+.register-form-massage:focus, .register-form-massage:hover {
   border-color: var(--accent-bg-color);
 }
 
