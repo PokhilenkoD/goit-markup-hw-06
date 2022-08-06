@@ -586,11 +586,6 @@ fill: currentColor
 fill: #FFFFFF;
 }
 
-.footer-subscription-form {
-  /* display: flex;
-  flex-direction: column;
-  gap: 20px; */
-}
 .footer-subscription-txt {
   line-height: calc(16 / 14);
   text-transform: uppercase;
@@ -905,7 +900,11 @@ pointer-events: none;
 border-color: var(--accent-bg-color);
 }
 
-.register-form-input:focus, .register-form-input:hover + .register-form-icon {
+.register-form-input:focus + .register-form-icon {
+  fill: var(--accent-bg-color);
+}
+
+.register-form-input:hover + .register-form-icon {
   fill: var(--accent-bg-color);
 }
 
@@ -982,9 +981,7 @@ border-color: var(--accent-bg-color);
   border-color: var(--accent-bg-color);
 }
 
-.register-icon {
-  
-}
+
 
 .register-checkbox:checked + .register-icon .register-icon-uncheck {
   opacity: 0;
@@ -1005,12 +1002,6 @@ border-color: var(--accent-bg-color);
   background-color: var(--accent-bg-color);
   border-radius: 2px;
 }
-
-.register-icon-uncheck { 
-    
-}
-
-
 
 
 .register-form-agreement-txt {
